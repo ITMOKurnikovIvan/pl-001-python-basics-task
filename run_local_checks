@@ -21,4 +21,7 @@ uv run ruff format --check src
 echo "==> MyPy"
 uv run mypy --strict src
 
+echo "==> Pytest"
+uv run pytest -q
+
 echo "All checks passed."

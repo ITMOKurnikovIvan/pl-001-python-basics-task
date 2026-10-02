@@ -20,4 +20,7 @@ uv run ruff format --check src || exit /b 1
 echo ==^> MyPy
 uv run mypy --strict src || exit /b 1
 
+echo ==^> Pytest
+uv run pytest -q tests || exit /b 1
+
 echo All checks passed.
